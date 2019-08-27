@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>コードアート</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="form">
+    <div id="input_txt" class="max pink lighten-2">
+      <div class="file-field">
+        <div class="btn pink darken-3">
+          <span>テキストをアップロード</span>
+          <input id="code" type="file" class="input_file" id="input_textfile">
+        </div>
+        <div class="none file-path-wrapper">
+          <input class="file-path validate" type="text">
+        </div>
+      </div>
+        <div class="input-field long">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">もしくは、テキストを入力</label>
+        </div>
+    </div>
+    <div id="input_img" class="max light-blue lighten-1">
+      <div class="file-field" id="file-field-img">
+        <div class="btn light-blue darken-4">
+          <span>画像をアップロード</span>
+          <input id="img_file" type="file" class="input_file " id="input_imgfile">
+        </div>
+        <div class="none file-path-wrapper">
+          <input class="file-path validate" type="text">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="result_img_div">
+    <img id="result_img" />
+  </div>
+  <div id="download_links">
+    <a id='download_link1' class='waves-effect waves-light btn' download='letter-image'>Download Image</a>
+    <a id='download_link2' class='waves-effect waves-light btn' download='letter-image-text'>Download Text</a>
+  </div>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
